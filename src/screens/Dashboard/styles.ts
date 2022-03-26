@@ -97,6 +97,4 @@ export const Title = styled.Text`
 
 export const TransactionList = styled(FlatList as new (props: FlatListProps<DataListProps>) => FlatList<DataListProps>).attrs({
     showsVerticalScrollIndicator:false,
-})`
-
-`; 
+})``; 

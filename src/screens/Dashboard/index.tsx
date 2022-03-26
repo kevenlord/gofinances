@@ -18,13 +18,13 @@ import {
     TransactionList,
 } from './styles';
 
-export interface DataListProps extends TransactionCardProps{
+export interface DataListProps extends TransactionCardProps {
     id: string;
 }
 
 
 export function Dashboard() {
-    const data: DataListProps = [
+    const data: DataListProps[] = [
         {
             id: '1',
             type: "positive",
@@ -37,7 +37,7 @@ export function Dashboard() {
             date: "13/04/2022",
         },
         {
-            id: '1',
+            id: '2',
             type: "negative",
             title: "Hamburgueria Pizzy",
             amount: "R$ 59,00",
@@ -48,7 +48,7 @@ export function Dashboard() {
             date: "10/04/2022",
         },
         {
-            id: '1',
+            id: '3',
             type: "negative",
             title: "Aluguel do apartamento",
             amount: "R$ 1.200,00",
@@ -57,9 +57,8 @@ export function Dashboard() {
                 icon: 'shopping-bag'
             },
             date: "10/04/2022",
-        },
-
-    ]
+        }
+    ];
 
     return (
         <Container>
